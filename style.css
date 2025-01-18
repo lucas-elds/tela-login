@@ -1,4 +1,123 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: "Nunito", serif;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+input:focus {
+    outline: none;
+}
+
+body {
+    background-color: #eeeeee;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+}
+
+#formulario {
+    width: 25%;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 0.14vw solid #dddddd;
+    border-radius: 1vw;
+    box-shadow: 0 0.6vw 1.3vw 0 #0000001a, 0 1vw 3.3vw 0 #0000001a;
+    padding: 2vw;
+}
+
+#icon {
+    background-color: #e9f035;
+    text-align: center;
+    font-size: 3.5vw;
+    border-radius: 5vw;
+    padding: 0.5vw;
+}
+
+#formulario h1 {
+    font-size: 1.6vw;
+    margin: 1vw 0;
+}
+
+#formulario label {
+    width: 100%;
+    color: #353535;
+    font-size: 1.1vw;
+    font-weight: bold;
+}
+
+#formulario input {
+    width: 98%;
+    height: 1.5vw;
+    padding: 0.3vw;
+    margin: 0.2vw 0;
+    border: 0.14vw solid #888888;
+    border-radius: 0.5vw;
+    font-size: 1vw;
+}
+
+.dica {
+    width: 100%;
+    height: 5vh;
+    font-size: 1vw;
+    color: #ff0000;
+}
+
+#formulario button {
+    background-color: #e9f035;
+    border: none;
+    padding: 0.5vw 1vw;
+    border-radius: 0.5vw;
+    font-size: 1.2vw;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.modal {
+    display: none;
+    color: #ffffff;
+    border: none;
+    border-radius: 1vw;
+    align-items: center;
+    font-size: 1.1vw;
+}
+
+.modal p {
+    padding: 1vw;
+}
+
+.modal button {
+    padding: 1vw;
+    color: #ffffff;
+
+    border-radius: 0 1vw 1vw 0;
+    cursor: pointer;
+}
+
+.sucesso {
+    background-color: #409940;
+}
+
+.sucesso button {
+    background-color: #317531;
+    border: 0.14vw solid #317531;
+}
+
+.erro {
+    background-color: #ff0000;
+}
+
+.erro button {
+    background-color: #cf0000;
+    border: 0.14vw solid #cf0000;
 }
